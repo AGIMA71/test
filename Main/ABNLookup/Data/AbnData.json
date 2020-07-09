@@ -1,0 +1,314 @@
+[
+  {
+    "ClientInternalId": 1000000000054,
+    "ABNidentifierValue": "43088415525",
+    "ACNidentifierValue": "088415525",
+    "mainNameorganisationName": "ABRA"
+  },
+  {
+    "ClientInternalId": 1000000000000,
+    "ABNidentifierValue": "51088474702",
+    "ACNidentifierValue": "088474702",
+    "mainNameorganisationName": "ARMOURED ASSETS PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000001,
+    "ABNidentifierValue": "12089523919",
+    "ACNidentifierValue": "089523919",
+    "mainNameorganisationName": "ACQUEST PROPERTY PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000003,
+    "ABNidentifierValue": "74089768445",
+    "ACNidentifierValue": "089768445",
+    "mainNameorganisationName": "ABACUS FUNDS MANAGEMENT PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000004,
+    "ABNidentifierValue": "48089680848",
+    "ACNidentifierValue": "089680848",
+    "mainNameorganisationName": "ACROSS COUNTRY KINGAROY PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000006,
+    "ABNidentifierValue": "83080438419",
+    "ACNidentifierValue": "080438419",
+    "mainNameorganisationName": "AUSTRALIAN ANTI CORROSION SYSTEMS PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000008,
+    "ABNidentifierValue": "42001723164",
+    "ACNidentifierValue": "001723164",
+    "mainNameorganisationName": "AUSTRALIA INC"
+  },
+  {
+    "ClientInternalId": 1000000000009,
+    "ABNidentifierValue": "24008935868",
+    "ACNidentifierValue": "008935868",
+    "mainNameorganisationName": "ASSOCIATION INC"
+  },
+  {
+    "ClientInternalId": 1000000000010,
+    "ABNidentifierValue": "45089720892",
+    "ACNidentifierValue": "089720892",
+    "mainNameorganisationName": "ANNANDALE PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000014,
+    "ABNidentifierValue": "53089157157",
+    "ACNidentifierValue": "089157157",
+    "mainNameorganisationName": "AUSTRALIA SA REGION"
+  },
+  {
+    "ClientInternalId": 1000000000016,
+    "ABNidentifierValue": "49089489261",
+    "ACNidentifierValue": "089489261",
+    "mainNameorganisationName": "ACTION COMMITTEE INC"
+  },
+  {
+    "ClientInternalId": 1000000000017,
+    "ABNidentifierValue": "75089205845",
+    "ACNidentifierValue": "089205845",
+    "mainNameorganisationName": "ASSOCIATION OF SA INC"
+  },
+  {
+    "ClientInternalId": 1000000000019,
+    "ABNidentifierValue": "15090105847",
+    "ACNidentifierValue": "090105847",
+    "mainNameorganisationName": "ASSOCIATION OF QUEENSLAND"
+  },
+  {
+    "ClientInternalId": 1000000000021,
+    "ABNidentifierValue": "22089489145",
+    "ACNidentifierValue": "089489145",
+    "mainNameorganisationName": "AUSTRALIA TRADING PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000023,
+    "ABNidentifierValue": "64089463392",
+    "ACNidentifierValue": "089463392",
+    "mainNameorganisationName": "AGRICULTURE SOCIAL CLUB INC"
+  },
+  {
+    "ClientInternalId": 1000000000024,
+    "ABNidentifierValue": "56089313431",
+    "ACNidentifierValue": "089313431",
+    "mainNameorganisationName": "ASSOCIATION OF NSW (VAWA) INC"
+  },
+  {
+    "ClientInternalId": 1000000000025,
+    "ABNidentifierValue": "91087647925",
+    "ACNidentifierValue": "087647925",
+    "mainNameorganisationName": "AAC"
+  },
+  {
+    "ClientInternalId": 1000000000029,
+    "ABNidentifierValue": "88088621078",
+    "ACNidentifierValue": "088621078",
+    "mainNameorganisationName": "ADR"
+  },
+  {
+    "ClientInternalId": 1000000000030,
+    "ABNidentifierValue": "56088774430",
+    "ACNidentifierValue": "088774430",
+    "mainNameorganisationName": "AEM"
+  },
+  {
+    "ClientInternalId": 1000000000031,
+    "ABNidentifierValue": "33089923722",
+    "ACNidentifierValue": "089923722",
+    "mainNameorganisationName": "AGL"
+  },
+  {
+    "ClientInternalId": 1000000000034,
+    "ABNidentifierValue": "54088928321",
+    "ACNidentifierValue": "088928321",
+    "mainNameorganisationName": "AIF"
+  },
+  {
+    "ClientInternalId": 1000000000040,
+    "ABNidentifierValue": "12090663951",
+    "ACNidentifierValue": "090663951",
+    "mainNameorganisationName": "ALP"
+  },
+  {
+    "ClientInternalId": 1000000000041,
+    "ABNidentifierValue": "72089157237",
+    "ACNidentifierValue": "089157237",
+    "mainNameorganisationName": "AMM"
+  },
+  {
+    "ClientInternalId": 1000000000046,
+    "ABNidentifierValue": "83086742234",
+    "ACNidentifierValue": "086742234",
+    "mainNameorganisationName": "ANI"
+  },
+  {
+    "ClientInternalId": 1000000000047,
+    "ABNidentifierValue": "40089799904",
+    "ACNidentifierValue": "089799904",
+    "mainNameorganisationName": "ATO"
+  },
+  {
+    "ClientInternalId": 1000000000060,
+    "ABNidentifierValue": "41089633394",
+    "ACNidentifierValue": "089633394",
+    "mainNameorganisationName": "AONE"
+  },
+  {
+    "ClientInternalId": 1000000000070,
+    "ABNidentifierValue": "32008857270",
+    "ACNidentifierValue": "008857270",
+    "mainNameorganisationName": "AXIS"
+  },
+  {
+    "ClientInternalId": 1000000000077,
+    "ABNidentifierValue": "42089614326",
+    "ACNidentifierValue": "089614326",
+    "mainNameorganisationName": "SECURITY"
+  },
+  {
+    "ClientInternalId": 1000000000078,
+    "ABNidentifierValue": "39089593706",
+    "ACNidentifierValue": "089593706",
+    "mainNameorganisationName": "ABYEI"
+  },
+  {
+    "ClientInternalId": 1000000000081,
+    "ABNidentifierValue": "15089529608",
+    "ACNidentifierValue": "089529608",
+    "mainNameorganisationName": "ACCRU"
+  },
+  {
+    "ClientInternalId": 1000000000096,
+    "ABNidentifierValue": "93088841810",
+    "ACNidentifierValue": "088841810",
+    "mainNameorganisationName": "ADTEN"
+  },
+  {
+    "ClientInternalId": 1000000000102,
+    "ABNidentifierValue": "74089635530",
+    "ACNidentifierValue": "089635530",
+    "mainNameorganisationName": "AITEF"
+  },
+  {
+    "ClientInternalId": 1000000000108,
+    "ABNidentifierValue": "59089441494",
+    "ACNidentifierValue": "089441494",
+    "mainNameorganisationName": "ALAAP"
+  },
+  {
+    "ClientInternalId": 1000000000133,
+    "ABNidentifierValue": "97089922805",
+    "ACNidentifierValue": "089922805",
+    "mainNameorganisationName": "APWEB"
+  },
+  {
+    "ClientInternalId": 1000000000135,
+    "ABNidentifierValue": "14088152523",
+    "ACNidentifierValue": "088152523",
+    "mainNameorganisationName": "ARCAN"
+  },
+  {
+    "ClientInternalId": 1000000000149,
+    "ABNidentifierValue": "38089995979",
+    "ACNidentifierValue": "089995979",
+    "mainNameorganisationName": "AASARA"
+  },
+  {
+    "ClientInternalId": 1000000000154,
+    "ABNidentifierValue": "17089921657",
+    "ACNidentifierValue": "089921657",
+    "mainNameorganisationName": "ABLAZE"
+  },
+  {
+    "ClientInternalId": 1000000000155,
+    "ABNidentifierValue": "95087112436",
+    "ACNidentifierValue": "087112436",
+    "mainNameorganisationName": "ABWNAP"
+  },
+  {
+    "ClientInternalId": 1000000000161,
+    "ABNidentifierValue": "38006121446",
+    "ACNidentifierValue": "006121446",
+    "mainNameorganisationName": "ACKMER"
+  },
+  {
+    "ClientInternalId": 1000000000166,
+    "ABNidentifierValue": "52089782052",
+    "ACNidentifierValue": "089782052",
+    "mainNameorganisationName": "ADICTS"
+  },
+  {
+    "ClientInternalId": 1000000000171,
+    "ABNidentifierValue": "53090008370",
+    "ACNidentifierValue": "090008370",
+    "mainNameorganisationName": "AERSKY"
+  },
+  {
+    "ClientInternalId": 1000000000173,
+    "ABNidentifierValue": "43083409714",
+    "ACNidentifierValue": "083409714",
+    "mainNameorganisationName": "AFLCSA"
+  },
+  {
+    "ClientInternalId": 1000000000175,
+    "ABNidentifierValue": "55081335784",
+    "ACNidentifierValue": "081335784",
+    "mainNameorganisationName": "AFTCRA"
+  },
+  {
+    "ClientInternalId": 1000000000176,
+    "ABNidentifierValue": "43084152036",
+    "ACNidentifierValue": "084152036",
+    "mainNameorganisationName": "AGAIBY"
+  },
+  {
+    "ClientInternalId": 1000000000177,
+    "ABNidentifierValue": "26087729459",
+    "ACNidentifierValue": "087729459",
+    "mainNameorganisationName": "AGOSCI"
+  },
+  {
+    "ClientInternalId": 1000000000178,
+    "ABNidentifierValue": "45089172010",
+    "ACNidentifierValue": "089172010",
+    "mainNameorganisationName": "ALKIRA"
+  },
+  {
+    "ClientInternalId": 1000000000179,
+    "ABNidentifierValue": "76088414037",
+    "ACNidentifierValue": "088414037",
+    "mainNameorganisationName": "ALLBRO"
+  },
+  {
+    "ClientInternalId": 1000000000185,
+    "ABNidentifierValue": "31088816880",
+    "ACNidentifierValue": "088816880",
+    "mainNameorganisationName": "AL52KD"
+  },
+  {
+    "ClientInternalId": 1000000000002,
+    "ABNidentifierValue": "12089523920",
+    "ACNidentifierValue": "089523920",
+    "mainNameorganisationName": "ACQUEST PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000012,
+    "ABNidentifierValue": "12089523921",
+    "ACNidentifierValue": "089523921",
+    "mainNameorganisationName": "ARMOURED PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000013,
+    "ABNidentifierValue": "12089523922",
+    "ACNidentifierValue": "089523922",
+    "mainNameorganisationName": "ABC PTY LTD"
+  },
+  {
+    "ClientInternalId": 1000000000402,
+    "ABNidentifierValue": "12089523923",
+    "ACNidentifierValue": "089523923",
+    "mainNameorganisationName": "DCA PTY LTD"
+  }
+]

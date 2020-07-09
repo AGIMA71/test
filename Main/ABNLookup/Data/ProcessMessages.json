@@ -1,0 +1,26 @@
+[
+  {
+    "code": "1001",
+    "description": "Missing a mandatory field."
+  },
+  {
+    "code": "1002",
+    "description": "The name search field was too short. Must have a length of at least 3 characters."
+  },
+  {
+    "code": "1003",
+    "description": "The search results exceeded the limit. Please refine the search criteria."
+  },
+  {
+    "code": "1004",
+    "description": "Sort order must be either asc or desc"
+  },
+  {
+    "code": "1005",
+    "description": "Sort field name is incorrect"
+  },
+  {
+    "code": "1006",
+    "description": "The business name already exists. Please change to another name."
+  }
+]
