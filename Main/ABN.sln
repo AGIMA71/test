@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABNLookup", "ABNLookup\ABNLookup.csproj", "{4949D8E0-B9CC-4ACF-A4D7-41D2BBAC4DCD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABNLookupUnitTests", "ABNLookupUnitTests\ABNLookupUnitTests.csproj", "{B7FF829F-3598-4C97-AA04-E3354B877209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{480E7B44-1785-4D66-8B84-76E845398F04}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Dev.README.md = Dev.README.md
+		nuget.config = nuget.config
+		Scripts\NuGetPkgSynch.ps1 = Scripts\NuGetPkgSynch.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{7EF3AF91-95FE-425C-91D7-9AEE6EA4B043}"
+	ProjectSection(SolutionItems) = preProject
+		Design\REST_API_2_0_MDGTech_v1_2.xml = Design\REST_API_2_0_MDGTech_v1_2.xml
+		Design\REST_API_2_0_MDGTech_v1_3.xml = Design\REST_API_2_0_MDGTech_v1_3.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specs", "Specs", "{5F72D7CB-CA4E-4E6F-B0EF-995C82D4CA02}"
+	ProjectSection(SolutionItems) = preProject
+		Specs\ABNLookup-V1-swagger-spec.json = Specs\ABNLookup-V1-swagger-spec.json
+		Specs\ABNLookup-V2-swagger-spec.json = Specs\ABNLookup-V2-swagger-spec.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABNLookup.Domain", "ABNLookup.Domain\ABNLookup.Domain.csproj", "{6EC95263-C335-4AE2-B8AA-9DF56383C67B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABNLookup.Infrastructure", "ABNLookup.Infrastructure\ABNLookup.Infrastructure.csproj", "{C45C31E5-203F-422D-820C-17129F128124}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4949D8E0-B9CC-4ACF-A4D7-41D2BBAC4DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4949D8E0-B9CC-4ACF-A4D7-41D2BBAC4DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4949D8E0-B9CC-4ACF-A4D7-41D2BBAC4DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4949D8E0-B9CC-4ACF-A4D7-41D2BBAC4DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7FF829F-3598-4C97-AA04-E3354B877209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FF829F-3598-4C97-AA04-E3354B877209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FF829F-3598-4C97-AA04-E3354B877209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FF829F-3598-4C97-AA04-E3354B877209}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC95263-C335-4AE2-B8AA-9DF56383C67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC95263-C335-4AE2-B8AA-9DF56383C67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC95263-C335-4AE2-B8AA-9DF56383C67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC95263-C335-4AE2-B8AA-9DF56383C67B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45C31E5-203F-422D-820C-17129F128124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45C31E5-203F-422D-820C-17129F128124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45C31E5-203F-422D-820C-17129F128124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45C31E5-203F-422D-820C-17129F128124}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7EF3AF91-95FE-425C-91D7-9AEE6EA4B043} = {480E7B44-1785-4D66-8B84-76E845398F04}
+		{5F72D7CB-CA4E-4E6F-B0EF-995C82D4CA02} = {480E7B44-1785-4D66-8B84-76E845398F04}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E2550A8-E393-4988-945E-04D45AE5F0EC}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://atotfs01:8080/tfs/tpc01
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ABNLookup\\ABNLookup.csproj
+		SccProjectName1 = ABNLookup
+		SccLocalPath1 = ABNLookup
+		SccProjectUniqueName2 = ABNLookupUnitTests\\ABNLookupUnitTests.csproj
+		SccProjectName2 = ABNLookupUnitTests
+		SccLocalPath2 = ABNLookupUnitTests
+		SccProjectUniqueName3 = ABNLookup.Domain\\ABNLookup.Domain.csproj
+		SccProjectName3 = ABNLookup.Domain
+		SccLocalPath3 = ABNLookup.Domain
+		SccProjectUniqueName4 = ABNLookup.Infrastructure\\ABNLookup.Infrastructure.csproj
+		SccProjectName4 = ABNLookup.Infrastructure
+		SccLocalPath4 = ABNLookup.Infrastructure
+	EndGlobalSection
+EndGlobal
