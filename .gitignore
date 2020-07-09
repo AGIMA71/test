@@ -1,0 +1,9 @@
+ABNSearchUI/ABNSearchUI/obj/
+Main/ABNLookup.Domain/bin/
+Main/ABNLookup.Domain/obj/
+Main/ABNLookup.Infrastructure/bin/
+Main/ABNLookup.Infrastructure/obj/
+Main/ABNLookup/bin/
+Main/ABNLookup/obj/
+Main/ABNLookupUnitTests/bin/
+Main/ABNLookupUnitTests/obj/
