@@ -1,0 +1,63 @@
+﻿@page "/AutoComplete"
+@using System.Text.Json;
+@using System.Text.Json.Serialization;
+@using Blazored.Typeahead;
+@using ABNSearchUI.Constants;
+@inject HttpClient  http;
+@*//todo replace styles by css classes*@
+
+<div style="align-content:center ;-webkit-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;margin-bottom:1em;background-color:#efeae4;-webkit-border-radius:4px 4px 0 0">
+    <div style="padding-left:20px">
+        <label style="color:#333;font-size:190%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Please enter your ABN:</label>
+    </div>
+    <div style="padding:20px;width:400px">
+        <BlazoredTypeahead SearchMethod="SearchABNs" @bind-Value="selectedAbn">
+            <SelectedTemplate>@context.ABN</SelectedTemplate>
+            <ResultTemplate>@context.AbnWithName</ResultTemplate>
+        </BlazoredTypeahead>
+    </div>
+    <div style="padding-left:20px;padding-bottom:30px">
+        @if (selectedAbn != null)
+        {
+        <p>ABN: @selectedAbn.ABN</p>
+        <p>Organisation Name: @selectedAbn.Name</p>
+        }
+    </div>
+    <div style="float:right;padding:20px;"><input type="button" value="Next" /></div>
+</div>
+
+@code
+{
+    private Abn selectedAbn { get; set; }
+    List<Abn> abns = new List<Abn>();
+
+    private async Task<IEnumerable<Abn>> SearchABNs(string searchText)
+    {
+        abns = new List<Abn>();
+        string url = "http://xxxx/api/v2/";
+        if (searchText.Length > 0)
+        {
+            url = url + (Char.IsDigit(searchText.First()) ? AbnLookupConstants.AbnController : AbnLookupConstants.OrgNameController) + "/" + searchText;
+            try
+            {
+                HttpResponseMessage httpResult = await http.GetAsync(url);
+                var jsonstring = await httpResult.Content.ReadAsStringAsync();
+                if (httpResult.IsSuccessStatusCode)
+                {
+                    abns = JsonSerializer.Deserialize<List<Abn>>(jsonstring);
+                }
+            }
+            catch { }
+        }
+        return await Task.FromResult(abns.ToList());
+    }
+
+    public class Abn
+    {
+        [JsonPropertyName("australianBusinessNumber")]
+        public string ABN { get; set; }
+        [JsonPropertyName("mainOrganisationName")]
+        public string Name { get; set; }
+        public string AbnWithName => this.ABN + " " + this.Name;
+    }
+}
