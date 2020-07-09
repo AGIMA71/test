@@ -1,0 +1,154 @@
+﻿@page "/"
+@using System.Text.Json;
+@using System.Net;
+@using System.Text.Json.Serialization;
+@using ABNSearchUI.Constants;
+@inject HttpClient  http;
+@*//TODO: replace styles by css classes*@
+
+<div style="-webkit-border-radius:6px 6px 0 0;border-radius:6px 6px 0 0;font-size:130%;margin-bottom:1em;background-color:#efeae4;-webkit-border-radius:4px 4px 0 0">
+    <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia ante quis magna pretium, at rhoncus nunc convallis.    </p>
+</div>
+
+<div style="margin-left:300px">
+    <label style="color:#333;font-size:190%;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><strong>Search</strong> by ABN or name:</label>
+    <div style="align-content:center">
+        <input type="text" style="width: 400px; height: 40px" @bind-value="abnInput" @bind-value:event="oninput" />
+        <button style="height:40px" @onclick="GetABNs">Search</button>
+    </div>
+</div>
+<br />
+<div style="align-content:center">
+    <table class="table">
+        @if (type == HttpStatusCode.OK)
+        {
+        <thead>
+            <tr>
+                <th>ABN</th>
+                <th>Organisation Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var abn in abns)
+            {
+            <tr>
+                <td>@abn.ABN</td>
+                <td>@abn.Name</td>
+            </tr>
+            }
+        </tbody>
+        }
+        else if (type == HttpStatusCode.UnprocessableEntity)
+        {
+    <tbody>
+        @foreach (var error in errorMessages.Messages)
+            {
+        <tr>
+            <td>Code:</td>
+            <td>@error.Code</td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td>@error.Description</td>
+        </tr>
+        <tr>
+            <td>Trace Id:</td>
+            <td>@error.Id</td>
+        </tr>
+            }
+    </tbody>
+        }
+        else if (type == HttpStatusCode.NotFound)
+        {       
+    <tbody>
+        <tr>
+            <td>Code:</td>
+            <td>@message.Code</td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td>@message.Description</td>
+        </tr>
+        <tr>
+            <td>Trace Id:</td>
+            <td>@message.Id</td>
+        </tr>
+    </tbody>
+        }
+    </table>
+</div>
+@code
+{
+    string abnInput { get; set; }
+    List<Abn> abns = new List<Abn>();
+    ErrorMessages errorMessages = new ErrorMessages();
+    Message message = new Message();
+    HttpStatusCode type;
+
+    private async Task GetABNs()
+    {
+
+        string url = "http://xxx/api/v1/";
+        abnInput = abnInput.Trim();
+        if (abnInput.Length > 0)
+        {
+            url = url + (Char.IsDigit(abnInput.First()) ? AbnLookupConstants.AbnController : AbnLookupConstants.OrgNameController) + "/" + abnInput;
+            try
+            {
+                HttpResponseMessage httpResult = await http.GetAsync(url);
+                var jsonstring = await httpResult.Content.ReadAsStringAsync();
+                type = httpResult.StatusCode;
+
+                switch (httpResult.StatusCode)
+                {
+                    case HttpStatusCode.OK:
+                        abns = JsonSerializer.Deserialize<List<Abn>>(jsonstring);
+                        break;
+                    case HttpStatusCode.NotFound:
+                        message = JsonSerializer.Deserialize<Message>(jsonstring);
+                        break;
+                    case HttpStatusCode.UnprocessableEntity:
+                        errorMessages = JsonSerializer.Deserialize<ErrorMessages>(jsonstring);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch { }
+        }
+
+    }
+
+    private class Abn
+    {
+        [JsonPropertyName("abNidentifierValue")]
+        public string ABN { get; set; }
+        [JsonPropertyName("mainNameorganisationName")]
+        public string Name { get; set; }
+    }
+
+    private class ErrorMessages
+    {
+        [JsonPropertyName("errors")]
+        public List<ErrorMessage> Messages { get; set; }
+    }
+    private class ErrorMessage
+    {
+        [JsonPropertyName("code")]
+        public string Code { get; set; }
+        [JsonPropertyName("detail")]
+        public string Description { get; set; }
+        [JsonPropertyName("id")]
+        public string Id { get; set; }
+    }
+    private class Message
+    {
+        [JsonPropertyName("type")]
+        public string Code { get; set; }
+        [JsonPropertyName("title")]
+        public string Description { get; set; }
+        [JsonPropertyName("traceId")]
+        public string Id { get; set; }
+    }
+}
+
